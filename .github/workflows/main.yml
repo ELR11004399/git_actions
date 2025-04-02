@@ -15,8 +15,22 @@ jobs:
   build:
     #
     runs-on: ['self-hosted', 'macOS', 'X64','ELR-runner']
-    steps:
+    #The "steps" keyword groups together all the steps that will run as part of the 'build' job.
+    steps: 
+    #The "uses" keyword tells the job to retrive the action named "actions/checkout" that checks the repository and downloads it to the runner.
+    - name: Checkout repo
     - uses: actions/checkout@v4
+    
+    #The "uses" keyword tells the job to retrive the action named "actions/set-up node" to install the specific version of the Node.js
+    - name: Setup node
+    - uses: actions/set-up node@v4
+      with:
+        node-version: 22
+
+    #The "run" keyword tells the job to execute a command on the runner.
+    - name: Install
+    - run: npm ci
     - name: Run a one-line script
+    
       run: echo Hellow, world!
     
