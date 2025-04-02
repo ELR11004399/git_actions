@@ -30,7 +30,7 @@ jobs:
     #The "run" keyword tells the job to execute a command on the runner.
     - name: Install
     - run: npm ci
-    - name: Run a one-line script
     
+    - name: Run a one-line script
       run: echo Hellow, world!
     
