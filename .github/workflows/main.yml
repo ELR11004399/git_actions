@@ -23,7 +23,7 @@ jobs:
     
     #The "uses" keyword tells the job to retrive the action named "actions/set-up node" to install the specific version of the Node.js
     - name: Setup node
-    - uses: actions/set-up node@v4
+    - uses: actions/setup-node@v4
       with:
         node-version: 22
 
