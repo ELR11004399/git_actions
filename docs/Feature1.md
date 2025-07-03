@@ -20,6 +20,13 @@ The system shall provide over speed protection to prevent the equipment from ope
     - Logging the event
     - Reducing speed or shutting down the equipment
 
+    | Protective Action | Description                          |
+    |-------------------|--------------------------------------|
+    | Alarm             | Audible/visual alert to operators    |
+    | Event Logging     | Record details of the over speed     |
+    | Speed Reduction   | Gradually decrease equipment speed   |
+    | Shutdown          | Safely stop the equipment            |
+
 5. **Notification**  
     The system shall notify operators of any over speed events via the user interface and/or external alerts.
 
