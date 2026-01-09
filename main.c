@@ -10,7 +10,7 @@ int main (void)
   int b = 1;
   int result = 0;
   result = sum(a,b);
-  
+  printf("hola mundo");
  ret 0;
 }
 
